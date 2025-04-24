@@ -19,7 +19,7 @@ public class Preciocondescuento {
      */
     public static void main(String[] args) {
         try ( // TODO code application logic here
-                Scanner Scanner = new Scanner(System.in)) {
+                Scanner Scanner = new Scanner(System.in); 
             System.out.println("ingrese el Precio del producto:");
             double Precionormal = Scanner.nextDouble();
             double descuento = 0;
@@ -43,7 +43,7 @@ public class Preciocondescuento {
             
     }
             
-        }
+        
 
         
         
