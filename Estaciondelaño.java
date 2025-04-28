@@ -2,28 +2,50 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package estaciondelaño;
-import java.util.Scanner;
-public class Estaciondelaño {
+package estacion;
+
+/**
+ *
+ * @author alfa
+ */import java.util.Scanner;
+public class Estacion {
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        try ( // TODO code application logic here
-                Scanner Scanner = new Scanner(System.in)) {
-            System.out.print(" ingrese un número de mes (1-12): ");
+        // TODO code application logic here
+         Scanner Scanner = new Scanner(System.in);
+            System.out.print("Ingresa el numero del mes (1-12): ");
             int mes = Scanner.nextInt();
-            String estacion;
-            
-            estacion = switch (mes) {
-                case 12, 1, 2 -> "Invierno";
-                case 3, 4, 5 -> "Primavera";
-                case 6, 7, 8 -> "Verano";
-                case 9, 10, 11 -> "Otoño";
-                default -> "mes incorrecgto. ingresa un número entre 1 y 12.";
-            };
-            System.out.println("La estación del año es: " + estacion);
-        }
-    }
+          String estacion;
+ 
+         switch (mes) { case 12:
+         case 1:
+         case 2:
+         estacion = "Invierno"; break;
+         case 3:
+         case 4:
+         case 5:
+         estacion = "Primavera"; break;
+         case 6:
+         case 7:
+         case 8:
+         estacion = "Verano"; break;
+         case 9:
+         case 10:
+         case 11:
+         estacion = "Otoño";
+ 
+           break; default:
+           estacion = "Mes invalido";
 }
+
+
+           System.out.println("La estacion del año es: " + estacion);
+}
+
+
+}
+
+
